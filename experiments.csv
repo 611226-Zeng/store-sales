@@ -1,5 +1,5 @@
 date_time,experiment_name,features_used,validation_split,model,params,score,notes
-2026-04-03,baseline_catboost_recent365,stores + oil + basic_date_features,last_16_days,CatBoostRegressor,"iterations=300, depth=6, lr=0.05",0.686549,baseline model
-2026-04-03,lag_7_14_catboost_recent365,stores + oil + basic_date_features + lag_7 + lag_14,last_16_days,CatBoostRegressor,"iterations=300, depth=6, lr=0.05",0.444306,strong result but validation may be optimistic because lag_7/14 can use actual sales inside validation window
-2026-04-03,safe_lag_16_21_28_catboost_recent365,stores + oil + basic_date_features + lag_16 + lag_21 + lag_28,last_16_days,CatBoostRegressor,"iterations=300, depth=6, lr=0.05",0.447398,current best and more realistic than short lag
+2026-03-31,baseline_catboost_recent365,stores + oil + basic_date_features,last_16_days,CatBoostRegressor,"iterations=300, depth=6, lr=0.05",0.686549,baseline model
+2026-04-01,lag_7_14_catboost_recent365,stores + oil + basic_date_features + lag_7 + lag_14,last_16_days,CatBoostRegressor,"iterations=300, depth=6, lr=0.05",0.444306,strong result but validation may be optimistic because lag_7/14 can use actual sales inside validation window
+2026-04-02,safe_lag_16_21_28_catboost_recent365,stores + oil + basic_date_features + lag_16 + lag_21 + lag_28,last_16_days,CatBoostRegressor,"iterations=300, depth=6, lr=0.05",0.447398,current best and more realistic than short lag
 2026-04-03,safe_lag_plus_coarse_holiday_catboost_recent365,stores + oil + basic_date_features + lag_16 + lag_21 + lag_28 + is_holiday + holiday_count,last_16_days,CatBoostRegressor,"iterations=300, depth=6, lr=0.05",0.460751,coarse holiday did not improve over safe lag
